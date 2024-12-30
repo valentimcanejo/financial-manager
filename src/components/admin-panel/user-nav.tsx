@@ -21,11 +21,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useRouter } from "next/navigation";
-//import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from "../../hooks/use-auth";
 
 export function UserNav() {
   const router = useRouter();
-  //const { deslogar } = useAuth();
+  const { deslogar } = useAuth();
 
   return (
     <DropdownMenu>
@@ -67,7 +67,7 @@ export function UserNav() {
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="hover:cursor-pointer">
+        <DropdownMenuItem className="hover:cursor-pointer" onClick={deslogar}>
           <LogOut className="w-4 h-4 mr-3 text-muted-foreground" />
           Sair
         </DropdownMenuItem>

@@ -11,18 +11,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   useEffect(() => {
-    if (isLogged === "unauthenticated") {
-      router.push("/login");
+    if (isLogged === "authenticated") {
+      router.push("/");
     }
   }, [isLogged]);
 
-  if (!isLogged || isLogged === "unauthenticated") {
+  if (!isLogged || isLogged === "authenticated") {
     return <LoadingPanel />;
   }
 
-  return (
-    <AdminPanelLayout>
-      <main>{children}</main>
-    </AdminPanelLayout>
-  );
+  return <main>{children}</main>;
 }

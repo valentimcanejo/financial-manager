@@ -9,6 +9,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "../../../components/ui/tooltip";
+import useNextHooks from "../../../hooks/use-next-hooks";
+import { useRouter } from "next/navigation";
 
 export type Projeto = {
   id: string;
@@ -28,21 +30,32 @@ export const columns: ColumnDef<Projeto>[] = [
   {
     accessorKey: "detalhes",
     header: "Detalhes",
-    cell: ({ row }) => (
-      <TooltipProvider disableHoverableContent>
-        <Tooltip delayDuration={100}>
-          <TooltipTrigger asChild>
-            <Button
-              className="rounded-full w-8 h-8 bg-background mr-2"
-              variant="outline"
-              size="icon"
-            >
-              <ChartNoAxesGantt />
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent side="bottom">Gerenciar</TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    ),
+    cell: function Cell({ row }) {
+      const { createQueryString } = useNextHooks();
+      const router = useRouter();
+
+      const handleClick = () => {
+        const newQuery = createQueryString("id", row.original.id);
+        router.push(`gerenciamento/projeto?${newQuery}`);
+      };
+
+      return (
+        <TooltipProvider disableHoverableContent>
+          <Tooltip delayDuration={100}>
+            <TooltipTrigger asChild>
+              <Button
+                onClick={handleClick}
+                className="rounded-full w-8 h-8 bg-background mr-2"
+                variant="outline"
+                size="icon"
+              >
+                <ChartNoAxesGantt />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent side="bottom">Gerenciar</TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      );
+    },
   },
 ];
