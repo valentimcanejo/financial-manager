@@ -1,0 +1,304 @@
+[
+  {
+    "id": "2ICuWUccJRSEkTXahr9roWK3xgm1",
+    "name": "Romulo",
+    "contact": "64575488",
+    "email": "valentim.canejo@escolar.ifrn.edu.br"
+  },
+  {
+    "id": "3Lz1kCXAtUdyqECKjw2Uc8SofqE2",
+    "name": "JULIO",
+    "contact": "84988334365",
+    "email": "juliocholiveira@gmail.com"
+  },
+  {
+    "id": "3bXfflfVBoh1V3vb9ffomvaFaG72",
+    "name": "Romulo",
+    "contact": "42435325",
+    "email": "valentim.canejo22222@hotmail.com",
+    "lastLogin": {
+      "seconds": 1701399600,
+      "nanoseconds": 292000000
+    }
+  },
+  {
+    "id": "5Oenri9BqeXLTYhvVOFoXcO7Em83",
+    "email": "valentim.canejo3333333@hotmail.com",
+    "contact": "43423423423523532",
+    "name": "teste556666"
+  },
+  {
+    "id": "91JRif4dcBjJlb0KctZL",
+    "map": {
+      "destino": "Midway Mall - Avenida Nevaldo Rocha - Tirol, Natal - RN, Brasil",
+      "origem": "Rua Vila Isabel - Jardim Planalto, Parnamirim - RN, Brasil",
+      "distancia": 17737,
+      "tempo": "23 minutos"
+    },
+    "email": "ifufusdfhds"
+  },
+  {
+    "id": "9NOjNlI9PNQ0D1jIQ8kGHOGgHUW2",
+    "email": "valentim.canejo@escolar.ifrn.edu.br",
+    "name": "Romulo",
+    "contact": "4534634743"
+  },
+  {
+    "id": "Ai3BNOShr9hFSLkFLuDycI0M2cf2",
+    "pricingPlan": {
+      "companies": 4,
+      "users": 10,
+      "emailTrigger": 5000,
+      "apiIntegration": true,
+      "whatsappWarnings": true,
+      "name": "free",
+      "whatsappMessages": 2,
+      "reviews": 50
+    },
+    "email": "valentim.canejo@hotmail.com",
+    "contact": "4234235",
+    "name": "Romulo Valentimfgggfjfg"
+  },
+  {
+    "id": "F3zO54fbzXbiB4hF3WPgPmDDLWj1",
+    "lastLogin": {
+      "seconds": 1701979293,
+      "nanoseconds": 178000000
+    },
+    "name": "teste",
+    "email": "valentim.canejo@escolar.ifrn.edu.br",
+    "contact": "34236523"
+  },
+  {
+    "id": "FuPpcUo1zfYOTtb88ktMLm0gZAn2",
+    "name": "gggsdg",
+    "lastLogin": {
+      "seconds": 1727303289,
+      "nanoseconds": 522000000
+    },
+    "contact": "543454",
+    "email": "teste777@hotmail.com"
+  },
+  {
+    "id": "Gh9cylMhJFSUHaO41qDRzRsXUCE3",
+    "email": "terte@hotmail.com",
+    "lastLogin": {
+      "seconds": 1727742089,
+      "nanoseconds": 221000000
+    },
+    "name": "sdgsdgsdg",
+    "pricingPlan": {
+      "companies": 1,
+      "whatsappWarnings": 0,
+      "whatsappMessages": 0,
+      "users": 1,
+      "name": "free",
+      "apiIntegration": true,
+      "reviews": 5,
+      "emailTrigger": 0,
+      "reasons": 2
+    },
+    "contact": "4543543"
+  },
+  {
+    "id": "KYC2QbRc6BeUrQPXei5NxpPA3Wz1",
+    "pricingPlan": {
+      "companies": 1,
+      "whatsappWarnings": 0,
+      "whatsappMessages": 0,
+      "users": 1,
+      "name": "free",
+      "apiIntegration": true,
+      "reviews": 5,
+      "emailTrigger": 0,
+      "reasons": 2
+    },
+    "lastLogin": {
+      "seconds": 1732070862,
+      "nanoseconds": 226000000
+    },
+    "email": "dgsdgdsg@hotmail.com",
+    "contact": "hfdhdh",
+    "name": "hdfhdfhdfh"
+  },
+  {
+    "id": "LtYsHjYxl0StITvqcyEvmUg6Pmk2",
+    "email": "sdhsdhsdhsdh@hotmail.com",
+    "name": "gdf",
+    "pricingPlan": {
+      "companies": 1,
+      "whatsappWarnings": 0,
+      "whatsappMessages": 0,
+      "users": 1,
+      "name": "free",
+      "apiIntegration": true,
+      "reviews": 5,
+      "emailTrigger": 0,
+      "reasons": 2
+    },
+    "lastLogin": {
+      "seconds": 1732803206,
+      "nanoseconds": 488000000
+    },
+    "contact": "3423"
+  },
+  {
+    "id": "NEN9NDnE7NaBys55iFNBmS07itX2",
+    "name": "Rômulo",
+    "email": "teste22@hotmail.com",
+    "contact": "21412424"
+  },
+  {
+    "id": "O8UUOCELPgdm3CxIp5u6f9AZ7tL2",
+    "contact": "23423423423423432",
+    "email": "valentim.canejo999@hotmail.com",
+    "name": "Romulo Valentim",
+    "lastLogin": {
+      "seconds": 1711214091,
+      "nanoseconds": 981000000
+    }
+  },
+  {
+    "id": "P3RTUn3cDQQpEKlR6ErdphHPBlE2",
+    "contact": "4234235",
+    "email": "valentim.canejo@hotmail.com",
+    "name": "Romulo Valentim"
+  },
+  {
+    "id": "RtVuPsWG1nggFsQduV9F3LWmwhV2",
+    "name": "Romulo",
+    "contact": "32352535",
+    "email": "valentimcanejoteste@hotmail.com"
+  },
+  {
+    "id": "S2QIWkQfsFezoU128MvEC7RuvTg1",
+    "name": "sagasgags",
+    "contact": "423432",
+    "email": "teste555@hotmail.com"
+  },
+  {
+    "id": "TrdmTn8sTGMnx0A8GrIp",
+    "email": "testetste",
+    "map": {
+      "origem": "Rua Vila Isabel - Jardim Planalto, Parnamirim - RN, Brasil",
+      "tempo": "24 minutos",
+      "destino": "Passarela do Midway Mall - Tirol, Natal - RN, Brasil",
+      "distancia": 17953
+    }
+  },
+  {
+    "id": "XDiLKLAEP7DenUvPoL6Y",
+    "email": "testediv 2",
+    "map": {
+      "origem": "Rua Vila Isabel - Jardim Planalto, Parnamirim - RN, Brasil",
+      "destino": "Via Direta Shopping - Avenida Senador Salgado Filho - Lagoa Nova, Natal - RN, Brasil",
+      "distancia": 14168,
+      "tempo": "18 minutos"
+    }
+  },
+  {
+    "id": "aB4KBu5k9AbG3s37UMwG",
+    "map": {
+      "destino": "Passarela do Midway Mall - Tirol, Natal - RN, Brasil",
+      "distancia": 17953,
+      "origem": "Rua Vila Isabel - Jardim Planalto, Parnamirim - RN, Brasil",
+      "tempo": "24 minutos"
+    },
+    "email": "teste"
+  },
+  {
+    "id": "anbc3ZqFKoal5binbfQ0lb66lC63",
+    "email": "valentim.canejo@escolar.ifrn.edu.br",
+    "name": "Romulo",
+    "contact": "4346347"
+  },
+  {
+    "id": "bcsDOasFZaRmYCOx8s9y9TI3oBL2",
+    "contact": "3424252353",
+    "email": "valentim.canejo555555@hotmail.com",
+    "name": "Júlio"
+  },
+  {
+    "id": "brfbUpili8cWuG9HH8H6X2969VW2",
+    "name": "Romulo",
+    "contact": "23523523",
+    "email": "valentim.canejo2@escolar.ifrn.edu.br"
+  },
+  {
+    "id": "eHmF3QSLhxaA6DMT0VFhhIcHQ0C2",
+    "email": "valentimcanejo@hotmail.com",
+    "contact": "5645647",
+    "name": "hfgjfk"
+  },
+  {
+    "id": "f4fd67d7xlcb7fT0NkwRiTDxPyH3",
+    "contact": "343245",
+    "email": "valentim.canejo33333@hotmail.com",
+    "name": "teste2"
+  },
+  {
+    "id": "lP7yMacJb5pn7D1Oyu37",
+    "map": {
+      "destino": "carrefour natal",
+      "tempo": "21 minutos",
+      "origem": "Rua Vila Isabel - Jardim Planalto, Parnamirim - RN, Brasil",
+      "distancia": 15840
+    },
+    "email": "testediv"
+  },
+  {
+    "id": "q3gBSYwwm8g6VaiZ4YOGdstxs453",
+    "name": "Romulo",
+    "contact": "423525",
+    "email": "valentim.canejo@escolar.ifrn.edu.br",
+    "lastLogin": {
+      "seconds": 1735329371,
+      "nanoseconds": 400000000
+    }
+  },
+  {
+    "id": "rIyYrMDnG8ND0uIBvhyc7VCRSjM2",
+    "email": "teste8888@gmail.com",
+    "contact": "64457",
+    "name": "fjfgjfgj"
+  },
+  {
+    "id": "rTtwuvGuFTesu44eFCfpX7uX0tY2",
+    "contact": "534636",
+    "name": "Romulo",
+    "email": "valentim.canejo@escolar.ifrn.edu.br"
+  },
+  {
+    "id": "tCRfiTY7VsOrLM4lyqt3",
+    "map": {
+      "distancia": 17737,
+      "tempo": "23 minutos",
+      "destino": "Midway Mall - Avenida Nevaldo Rocha - Tirol, Natal - RN, Brasil",
+      "origem": "Rua Vila Isabel - Jardim Planalto, Parnamirim - RN, Brasil"
+    },
+    "email": "teste"
+  },
+  {
+    "id": "ujA3KOiEHEdpQiiUCGZqStFbYoG2",
+    "email": "valentim.canejo3@escolar.ifrn.edu.br",
+    "contact": "3634747",
+    "name": "Romulo"
+  },
+  {
+    "id": "waJQCooVwQNP6gY02H8NzcLvHji1",
+    "email": "antanny7@gmail.com",
+    "contact": "3423532",
+    "name": "romulo"
+  },
+  {
+    "id": "zf4RQkzOBjNziWNoLn51stD9jji1",
+    "contact": "343535236",
+    "name": "Romulo",
+    "lastLogin": {
+      "seconds": 1735329458,
+      "nanoseconds": 270000000
+    },
+    "email": "valentim.canejo@hotmail.com",
+    "admin": true
+  }
+]

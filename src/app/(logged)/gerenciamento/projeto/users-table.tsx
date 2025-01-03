@@ -11,7 +11,6 @@ const UsersTable = () => {
         res.json()
       ),
   });
-  console.log(data);
 
   return <DataTable columns={columnsClients} data={data || []} />;
 };

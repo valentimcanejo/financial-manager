@@ -1,8 +1,6 @@
-"use client";
-
 import { ColumnDef } from "@tanstack/react-table";
 import { Button } from "../../../../components/ui/button";
-import { ChartNoAxesGantt } from "lucide-react";
+import { BlocksIcon, ChartNoAxesGantt, CircleX } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -11,16 +9,8 @@ import {
 } from "../../../../components/ui/tooltip";
 import useNextHooks from "../../../../hooks/use-next-hooks";
 import { useRouter } from "next/navigation";
-
-export type Client = {
-  id: string;
-  name: string;
-  email: string;
-  createdAt: Date;
-  updatedAt: Date;
-  situacao: "pending" | "processing" | "success" | "failed";
-  contact: string;
-};
+import ModalDetalhesPlano from "./modal-detalhes-plano";
+import { Client } from "../../../../models/client";
 
 export const columnsClients: ColumnDef<Client>[] = [
   {
@@ -31,46 +21,59 @@ export const columnsClients: ColumnDef<Client>[] = [
     accessorKey: "email",
     header: "Email",
   },
-  // {
-  //   accessorKey: "createdAt",
-  //   header: "Registrado em",
-  // },
-  // {
-  //   accessorKey: "situacao",
-  //   header: "Situação",
-  // },
   {
     accessorKey: "contact",
     header: "Contato",
   },
   {
-    accessorKey: "detalhes",
-    header: "Detalhes",
+    accessorKey: "pricingPlan",
+    header: "Plano",
     cell: function Cell({ row }) {
-      const { createQueryString } = useNextHooks();
-      const router = useRouter();
-
-      const handleClick = () => {
-        const newQuery = createQueryString("id", row.original.id);
-        router.push(`gerenciamento/projeto?${newQuery}`);
-      };
-
-      return (
+      return !row.original?.pricingPlan?.name ||
+        row.original?.pricingPlan?.name === "free" ? (
         <TooltipProvider disableHoverableContent>
           <Tooltip delayDuration={100}>
             <TooltipTrigger asChild>
-              <Button
-                onClick={handleClick}
-                className="rounded-full w-8 h-8 bg-background mr-2"
-                variant="outline"
-                size="icon"
-              >
-                <ChartNoAxesGantt />
-              </Button>
+              <CircleX className="text-red-400" />
             </TooltipTrigger>
-            <TooltipContent side="bottom">Gerenciar</TooltipContent>
+            <TooltipContent side="bottom">Sem Plano</TooltipContent>
           </Tooltip>
         </TooltipProvider>
+      ) : (
+        <div className="flex items-center gap-2">
+          <span className="font-medium text-green-400">
+            {row.original?.pricingPlan?.name}
+          </span>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "detalhes",
+    header: "Detalhes",
+    cell: function Cell({ row }) {
+      // const { createQueryString } = useNextHooks();
+      // const router = useRouter();
+
+      // const handleClick = () => {
+      //   const newQuery = createQueryString("id", row.original.id);
+      //   router.push(`gerenciamento/projeto?${newQuery}`);
+      // };
+
+      return (
+        <ModalDetalhesPlano
+          dadosCliente={row.original}
+          dialogTrigger={
+            <TooltipProvider disableHoverableContent>
+              <Tooltip delayDuration={100}>
+                <TooltipTrigger asChild>
+                  <ChartNoAxesGantt />
+                </TooltipTrigger>
+                <TooltipContent side="bottom">Gerenciar</TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          }
+        />
       );
     },
   },
