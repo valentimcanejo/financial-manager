@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../hooks/use-auth";
+import { signOut } from "../../app/(unlogged)/login/actions";
 
 export function UserNav() {
   const router = useRouter();
@@ -67,7 +68,7 @@ export function UserNav() {
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="hover:cursor-pointer" onClick={deslogar}>
+        <DropdownMenuItem className="hover:cursor-pointer" onClick={signOut}>
           <LogOut className="w-4 h-4 mr-3 text-muted-foreground" />
           Sair
         </DropdownMenuItem>

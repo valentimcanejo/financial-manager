@@ -7,6 +7,8 @@ import CustomSessionProvider from "../context/client-provider";
 import { authOptions } from "../lib/next-auth-options";
 import { AuthProvider } from "../context/auth-context";
 
+import ReactQueryProvider from "../components/providers/react-query-provider";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,18 +29,16 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await getServerSession(authOptions);
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <CustomSessionProvider session={session}>
+        <ReactQueryProvider>
           <AuthProvider>
             <ThemeProvider>{children}</ThemeProvider>
           </AuthProvider>
-        </CustomSessionProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );

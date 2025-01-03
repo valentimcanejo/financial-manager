@@ -1,7 +1,8 @@
 import { redirect } from "next/navigation";
-import { createClient } from "../../../supabase/utils/server";
 
-export default async function Layout({
+import { createClient } from "../../supabase/utils/server";
+
+export default async function PrivatePage({
   children,
 }: {
   children: React.ReactNode;
@@ -10,9 +11,9 @@ export default async function Layout({
 
   const { data, error } = await supabase.auth.getUser();
 
-  if (data?.user) {
-    redirect("/");
+  if (error || !data?.user) {
+    redirect("/login");
   }
 
-  return <main>{children}</main>;
+  return <>{children}</>;
 }
